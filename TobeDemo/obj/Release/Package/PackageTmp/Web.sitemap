@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="/" title="Home"  description="This is the root">
+      <siteMapNode url="~/Default.aspx" title="Home"  description="This is the Home Page" />
+		  <siteMapNode url="~/Register.aspx" title="Register"  description="" />
+		  <siteMapNode url="~/Login.aspx" title="Login"  description="" />
+		  <siteMapNode url="~/Contact.aspx" title="Contact us"  description="" />
+		  <siteMapNode url="~/About.aspx" title="About Us"  description="Used to test view state" />
+		  <siteMapNode url="~/Demo/Demo.aspx" title="Demo"  description="" >
+			  <siteMapNode url="~/Demo/PrimeForm.aspx" title="Prime Numbers Generation"  description="Generate all prime numbers within a range" />
+			  <siteMapNode url="~/Demo/Switching.aspx" title="Switch Syntax Testing"  description="Choose a day and suubmit" />
+        <siteMapNode url="~/Demo/Fibonacci.aspx" title="Fibonacci Algorithm" description="A test of iteration and recursion on fibonacci series"></siteMapNode>
+			  <siteMapNode url="~/Demo/AjaxTest.aspx" title="Ajax Testing"  description="Test AJAX functionality" />
+        <siteMapNode url="~/Demo/ServiceTest.aspx" title="Service Testing"  description="Test updatePanel, updateProgress, timer and basic web services" />
+        <siteMapNode url="~/Demo/Validate.aspx" title="Validation"  description="Validates user input" />
+        <siteMapNode url="~/Demo/JQuery.aspx" title="JQuery Testing" description="Testing JQuery functionality"></siteMapNode>
+        <siteMapNode url="~/Demo/Mailing.aspx" title="Sending an Email"  description="Sends an email and saves an offline copy" />
+        <siteMapNode url="~/Demo/Files.aspx" title="File Operations"  description="Perform Operations on Files" />
+        <siteMapNode url="~/Demo/Databases.aspx" title="Database Operations" description="Perform operations with database controls" />
+        <siteMapNode url="~/Demo/TestEncryptDecrypt.aspx" title="Encryption/Decryption" description="Perform encryption and decryption"/>
+        <siteMapNode url="~/Demo/UploadImage.aspx" title="Image upload" description="Uploading or display an image in the local server"></siteMapNode>
+        <siteMapNode url="~/Demo/CGPA.aspx" title="Calculate CGPA" description="To calculate your CGPA"></siteMapNode>
+        <siteMapNode url="~/Demo/Accordion.aspx"  title="Accordion Practise" description="Enabling an accordion menu using javascript"></siteMapNode>
+		  </siteMapNode>
+    </siteMapNode>
+</siteMap>

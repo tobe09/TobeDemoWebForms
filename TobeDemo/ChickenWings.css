@@ -1,0 +1,12 @@
+﻿body {
+    font-size:18px;
+    margin:2%;
+    border-width: 5px;
+    border-style:groove;
+    border-color:#4cff00
+}
+
+.smallPic{
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TobeDemoMaster.Master.cs" Inherits="TobeDemo.MasterPages.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/TobeDemoStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="MasterForm" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+        <Services>
+            <asp:ServiceReference Path="/Services/NameService.svc" />
+        </Services>
+        <Scripts>
+            <asp:ScriptReference Path="/Scripts/jquery-3.1.1.min.js" />
+        </Scripts>
+    </asp:ScriptManager>
+        <div id="PageWrapper">
+            <header>
+                <br /><h1>Demo School</h1>
+                <p>This is a demo site</p>
+            </header>
+            <nav>
+                <div style="margin:0 auto;">
+                <asp:Menu CssClass="Menu" ID="TobeDemoMenu" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                </div>
+            </nav>
+            <section id="MainContent">
+                <div style="margin:20px;">
+                    <asp:ContentPlaceHolder ID="Content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </section>
+            <aside>This contains the aside<br />
+                <asp:Image runat="server" AlternateText="Little Girl" ImageUrl="../Images/Shool aside.jpg" ImageAlign="Middle"/>
+                <asp:ImageButton runat="server" AlternateText="Little Girl" ImageUrl="~/Images/Shool%20aside.jpg" ImageAlign="Middle"/>
+            </aside>
+            <footer>
+                Footer information goes here <br />
+                <p style="text-align:right; font-size: 11px;">TCee Designs and Creation (A subsidiary of Neptune Nigeria Limited)</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
